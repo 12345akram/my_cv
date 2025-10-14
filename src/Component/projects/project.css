@@ -1,0 +1,44 @@
+.contaner_projects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20PX;
+}
+.contaner_projects .porfilo_item{
+    width: 31%;
+    margin-bottom: 50px;
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.prfotilo_item_image{
+    border-radius: 15px;
+    background-position: center;
+    overflow: hidden;
+
+}
+.porfilo_item h3{
+    margin: 22px 0 25px;
+
+}
+.portfolio_item_btn{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;  
+    
+}
+@media (max-width:1024px){
+    .contaner_projects .porfilo_item{
+        flex: 1 1 calc(50% - 20px);
+    }
+
+
+}
+@media (max-width:600px){
+    
+        .contaner_projects .porfilo_item{
+        flex: 1 1 100%;
+    }
+}
