@@ -21,8 +21,8 @@ const contactData = [
      id: 3,
     icon: <FaFacebookSquare/>,
     title:'facebook',
-    info: 'altofan',
-    link: 'https://facebook.com/altofan'
+    info: 'akramameen',
+    link: 'https://facebook.com'
   }
 ]
 
@@ -43,7 +43,7 @@ const Contact = () => {
    <section className="contact" id="contact">
     <div className="top_sec">
       <h5>of in toutch</h5>
-      <h2> contact us</h2>
+      <h2> contact </h2>
     </div>
     <div className="container contact_contaner">
       <div className="contact_options">

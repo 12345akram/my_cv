@@ -18,19 +18,49 @@
 .home_container{
     font-size: 1.5rem;
 }
-.home_container .ME{
-    width: 300px;
-    height: 600px;
-    background: linear-gradient(var(--primary-color),transparent);
-    border-radius: 12rem 12rem 0 0;
-    margin: 4px auto;
-    padding:6rem 3rem 3rem 0;
-    overflow: hidden;
-    display: flex;
-    
-   
 
+.ME {
+    flex: 1;
+    max-width: 350px; /* تقليل الحجم من 400px إلى 350px */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem 1rem;
+    margin: 0 auto;
 }
+
+.ME img {
+    width: 100%;
+    border-radius: 12rem 12rem 0 0;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+    transform: scale(0.95); /* تقليل الحجم بنسبة 5% لإحساس أخف */
+}
+
+/* العلامة المائية المتحركة */
+.watermark {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px; /* تقليل حجم العلامة المائية لتتناسب مع الصورة الجديدة */
+    height: 180px;
+    background: radial-gradient(circle at center, rgba(77,181,255,0.3), rgba(77,181,255,0.05), transparent 70%);
+    border-radius: 50%;
+    animation: float 5s ease-in-out infinite;
+    filter: blur(15px);
+    z-index: 1;
+}
+
+/* حركة لطيفة صعود وهبوط */
+@keyframes float {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); } /* أقل حركة لتوازن الحجم الجديد */
+    100% { transform: translateX(-50%) translateY(0); }
+}
+
 .scroll-down{
     position: absolute;
     right: 35px;

@@ -1,39 +1,44 @@
 import React from "react";
 import "./skil.css";
-import css from "../../assets/dev2.jpg"
-import javascript from "../../assets/dev2.jpg"
-import pathon from "../../assets/dev2.jpg"
-import react from "../../assets/dev2.jpg"
-import java from "../../assets/dev2.jpg"
-import csss from "../../assets/dev2.jpg"
-import twind from "../../assets/dev2.jpg"
+import flutter from "../../assets/flutter.jpeg"
+import java from "../../assets/java.jpeg"
+import react from "../../assets/react.jpeg"
+import php from "../../assets/php.jpeg"
+import html from "../../assets/html.jpeg"
+import css from "../../assets/css.jpeg"
+import slaceforce from "../../assets/salceforce.jpeg"
+import ajax from "../../assets/ajax.png"
+import database from "../../assets/database.jpeg"
+import paython from "../../assets/paython.jpeg"
+import office from "../../assets/office.jpeg"
+import ccna from "../../assets/ccna.jpeg"
  
 const SkillsData = [
   {
     id: 1,
-    image: css,
-    title:'css',
+    image: java,
+    title:'java_web_servlet_jsp',
     disc: 'user interfaces'
   },
    {
     id: 2,
-    image: javascript,
-    title:'css',
+    image: flutter,
+    title:'fluter',
     disc: 'user interfaces'
   }, {
     id: 3,
-    image: pathon,
-    title:'css',
+    image: react,
+    title:'react',
     disc: 'user interfaces'
   }, {
     id: 4,
-    image: css,
-    title:'css',
+    image: php,
+    title:'php',
     disc: 'user interfaces'
   }, {
     id: 5,
-    image: twind,
-    title:'css',
+    image: html,
+    title:'html',
     disc: 'user interfaces'
   }, {
     id: 6,
@@ -42,13 +47,34 @@ const SkillsData = [
     disc: 'user interfaces'
   }, {
     id: 7,
-    image: css,
-    title:'css',
+    image: slaceforce,
+    title:'salceforce',
     disc: 'user interfaces'
   }, {
     id: 8,
-    image: css,
-    title:'css',
+    image: ajax,
+    title:'ajax',
+    disc: 'user interfaces'
+  },
+   {
+    id: 9,
+    image: database,
+    title:'database',
+    disc: 'user interfaces'
+  },{
+    id: 9,
+    image: office,
+    title:'office',
+    disc: 'user interfaces'
+  },{
+    id: 9,
+    image: paython,
+    title:'paython',
+    disc: 'user interfaces'
+  },{
+    id: 9,
+    image: ccna,
+    title:'ccna',
     disc: 'user interfaces'
   }
   

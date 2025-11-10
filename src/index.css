@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +9,8 @@
     list-style: none;
     text-decoration: none;
 }
-:root{
+
+:root {
     --color-bg: #1f1f1f;
     --primary-color: #4db5ff;
     --secondary-color: #1f1f38;
@@ -16,93 +18,105 @@
     --white-color: #fff;
     --black-color: #000000;
     --transition: all 0.4s ease;
-    --color-light: #111111;
+    --color-light: #bbbbbb;
 }
-body{
+
+body {
     background: var(--color-bg);
     color: var(--white-color);
     line-height: 1.7;
-    background-image: url();
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
 }
-h1,h2,h3,h4,h5{
+
+h1, h2, h3, h4, h5 {
     font-weight: 500;
 }
-h1{
-    font-size: 2.srem;
+
+h1 {
+    font-size: 2.5rem;
 }
-section{
+
+section {
     padding-top: 8rem;
 }
-.text_light{
+
+.text_light {
     color: var(--color-light);
 }
-a{
+
+a {
     color: var(--primary-color);
     transition: var(--transition);
 }
-a:hover{
+
+a:hover {
     color: var(--white-color);
 }
-.btn{
-    width: max-content;
+
+.btn {
     display: inline-block;
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
-    cursor: 1px solid var(--primary-color);
-    transform: var(--transition);
-
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--white-color);
     color: var(--color-bg);
     border-color: transparent;
-
 }
-.btn-primary{
+
+.btn-primary {
     background: var(--primary-color);
     color: var(--color-bg);
-    border: 1px solid var(--primary-color); 
+    border: 1px solid var(--primary-color);
 }
-imag{
+
+img {
     display: block;
     width: 100%;
     object-fit: cover;
-  
 }
-.top_sec h2{
+
+.top_sec h2 {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 3rem;
 }
 
-.top_sec h1{
+.top_sec h1 {
     text-align: center;
-    color: var(--color-color);
-}
-
-@media( max-width: 1024px){
-    .container{
-        width: 85%;
-    }
-    section{
-    padding-top: 6rem;
-}
-
-}
-@media (max-width: 600px){
-    .container{
-        width: 90%;
-    }
-    section{
-    padding-top: 4rem;
-}
-.top_sec h2{
-    
+    color: var(--white-color);
     margin-bottom: 2rem;
 }
 
+/* استجابة الشاشات */
+@media(max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+    section {
+        padding-top: 6rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    section {
+        padding-top: 4rem;
+    }
+    .top_sec h2 {
+        margin-bottom: 2rem;
+    }
 }

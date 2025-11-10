@@ -15,8 +15,10 @@ const Home = () => {
           <a href="a" className="btn-primary">lET'S look</a>
         </div>
 <div className="ME">
-  <img src={My} alt="" />
+  <div className="watermark"></div>
+  <img src={My} alt="Akram" />
 </div>
+
 <a href="#about" className="scroll-down">scrool down</a>
 <HomeSocial/>
       </div>
